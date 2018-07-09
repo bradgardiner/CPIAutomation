@@ -4,12 +4,14 @@ import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
+const Engineering = () => import('../components/Engineering.vue')
+
+
 export default new Router({
+  mode: 'history',
+  fallback: false,
+  scrollBehavior: () => ({ y: 0}),
   routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+    { path: '/engineering', component: Engineering}
   ]
 })
