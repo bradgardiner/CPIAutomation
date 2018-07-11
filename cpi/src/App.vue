@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <div id="header-logo">
-      <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" >
+      <router-link to="/">
+        <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" >
+
+      </router-link>
 
     </div>
 
@@ -50,7 +53,7 @@ export default {
   #header-logo{
     background-color: #1b1a1a;
     position: fixed;
-    z-index: 0;
+    z-index: 3;
     height: 55px;
     padding: 25px;
     top: 0;
@@ -86,16 +89,19 @@ export default {
     font-weight: 300;
     letter-spacing: .075em;
     margin-right: 1.8em;
-    &:hover{
+}
+    a:hover {
       color: #fff;
     }
+
     &.router-link-active
       {color: #fff;
       font-weight: 400;}
+
     &:nth-child(6){
       margin-right: 0;
     }
-    }
+
   .logo{
     padding: 10px;
     padding-left: 20px;

@@ -3,8 +3,13 @@
     <div id="main-banner">
 
     </div>
-    <div id="engineering-banner">
+    <div class="container" id="engineering-banner">
       <img src="http://vijayshekharacademy.com/wp-content/uploads/2016/12/Engineering-Banner.jpg" alt="banner" width=100% height=50%>
+      <div class="eng-disc">
+        <p style="color: black; z-index: 5;">Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.
+        </p>
+      </div>
+      <button class="eng-button">More</button>
 
     </div>
     <div id="capabilities-banner">
@@ -28,4 +33,53 @@
 </script>
 
 <style>
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .eng-disc{
+    text-align: left;
+    position: absolute;
+    bottom: 20%;
+    top: 20%;
+    left: 5%;
+    right: 50%;
+    padding:30px;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+    opacity: 0.9;
+  }
+
+  .eng-button {
+    position: absolute;
+    bottom: 40%;
+    text-shadow: 2px 2px black;
+
+    left: 75%;
+    font-size: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    background-color: #008CBA;
+    color: white;
+    border: 2px solid #008CBA;
+  }
+
+  .eng-button:hover {
+    filter: brightness(85%);
+    background-color: lighten(#008CBA, 50%);
+    color: white;
+  }
+
+
+  #home{
+    padding-top:160px;
+  }
+
 </style>

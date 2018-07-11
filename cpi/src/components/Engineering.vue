@@ -20,7 +20,16 @@ export default{
 </script>
 
 <style>
+  body{
+    background-color: #e8e8e8 ;
+  }
+
+  #eng{
+    padding-top: 105px;
+  }
+
   #banner-eng{
+    padding-top: 105px;
     align-content: center;
     padding: 30px;
     padding-right: 70%;
