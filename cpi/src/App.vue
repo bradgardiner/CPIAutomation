@@ -1,9 +1,14 @@
 <template>
   <div id="app">
+    <div id="header-logo">
+      <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" >
+
+    </div>
+
     <header class="header">
       <nav class="inner">
         <router-link to="/" exact>
-          <img src="assets/logo.png" class="logo" alt="logo"></img>
+          <img src="http://www.cpiautomation.com/sites/default/files/favico.ico" class="logo" alt="logo"></img>
         </router-link>
         <router-link to="/store">Store</router-link>
         <router-link to="/engineering">Engineering</router-link>
@@ -13,8 +18,11 @@
         <router-link to="/contact">Contact us</router-link>
       </nav>
     </header>
-
+    <transition name="fade" mode="out-in">
+      <router-view class="view"></router-view>
+    </transition>
   </div>
+
 </template>
 
 <script>
@@ -27,7 +35,7 @@ export default {
 
   body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 15px;
+    font-size: 30px;
     background-color: lighten(#eceef1, 30%);
     margin: 0;
     padding-top: 55px;
@@ -38,14 +46,29 @@ export default {
     color: #34495e;
     text-decoration: none;
   }
-  .header{
-    background-color: #ff6600;
+
+  #header-logo{
+    background-color: #1b1a1a;
     position: fixed;
-    z-index: 999;
+    z-index: 0;
     height: 55px;
+    padding: 25px;
     top: 0;
     left: 0;
     right: 0;
+    text-align:center;
+  }
+
+  .header{
+    background-color: #2f2f2f;
+    position: fixed;
+    z-index: 3;
+    height: 55px;
+    top: 105px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align:center;
     .inner{
       max-width: 800px;
       box-sizing: border-box;
@@ -74,10 +97,19 @@ export default {
     }
     }
   .logo{
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+
     width: 24px;
     margin-right: 10px;
     display: inline-block;
     vertical-align: middle;
   }
 
+  .fade-enter-active, .fade-leave-active{
+    transition: all .2s ease;}
+  .fade-enter, .fade-leave-active{
+    opacity: 0
+  }
 </style>
