@@ -9,8 +9,9 @@
         <p style="color: black; z-index: 5;">Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.
         </p>
       </div>
-      <button class="eng-button">More</button>
-
+      <router-link to="/engineering">
+        <button class="eng-button">More</button>
+      </router-link>
     </div>
     <div id="capabilities-banner">
       <img src="http://www.mcnealpro.com/files/capabilities-banner.jpg" width=100% height=100%>
