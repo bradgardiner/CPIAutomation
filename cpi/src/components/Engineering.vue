@@ -1,22 +1,15 @@
 <template>
   <div id="eng">
-    <div id="eng-img">
-      <img src="http://www.cpiautomation.com/sites/all/themes/corporateclean/images/design00.png">
-    </div>
-    <div class="container" id="banner-eng">
-      <h1> Engineering and Design </h1>
-
-      <div id="eng-info">
-        <p style="float: left;">With design information CPI can provide a conceptual design</p>
-        <img id="design-img" src="~../assets/eng.jpg" width="500px">
-
+    <div class="row" id="eng-overview">
+      <div class="column">
+        <p> With design information CPI can provide a conceptual design </p>
       </div>
-      <!-- <div> -->
-      <!-- </div> -->
-
-
+      <div class = "column">
+        <img id="eng-img" src="~../assets/eng.jpg" width="500px">
+      </div>
     </div>
   </div>
+
 </template>
 <script>
 export default{
@@ -35,23 +28,14 @@ export default{
   }
 
   #design-img{
-    /* width: 50%; */
-    float: right;
-
-    /* padding-top: 30px; */
-
   }
 
 
   #eng-img{
-    display: block;
-    margin: auto;
-    align: middle;
+    float: left;
   }
 
   #eng{
-    padding-top: 105px;
-    margin: 10%;
   }
 
   #banner-eng{
@@ -63,17 +47,12 @@ export default{
   }
 
   #eng-info{
+
+  }
+
+  #eng-overview{
+    border-top: 2px dashed white;
     border-bottom: 2px dashed white;
-
-    float: right;
-    padding: 30px;
-    /* opacity: 0.5; */
-    align-content: center;
-    background-color: white;
-    color: black;
-    padding: 30px;
-    width: 100%;
-
   }
 
 </style>

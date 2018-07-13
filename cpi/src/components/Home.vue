@@ -19,6 +19,11 @@
     <div id="services-banner">
       <img src="https://demandmoremedia.com/wp-content/uploads/2018/04/Services.png" widht=100% height=100%>
     </div>
+    <div id="brand-banner">
+        <div>
+          <img src="~../assets/brandBelt.png" width="100%">
+        </div>
+    </div>
   </div>
 </template>
 
@@ -78,9 +83,11 @@
     color: white;
   }
 
-
-  #home{
-    padding-top:160px;
+  #brand-banner{
+    padding: 30px;
   }
+
+
+
 
 </style>

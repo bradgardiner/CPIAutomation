@@ -24,6 +24,20 @@
     <transition name="fade" mode="out-in">
       <router-view class="view"></router-view>
     </transition>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="column">
+          <h1> Something </h1>
+          <p> This  should be a section of links that redirect the user amongst the site</p>
+        </div>
+        <div class="column">
+          <h1> Something Else</h1>
+          <p> this should be another section of links for users</p>
+        </div>
+      </div>
+
+    </footer>
   </div>
 
 </template>
@@ -41,7 +55,7 @@ export default {
     font-size: 30px;
     background-color: lighten(#eceef1, 30%);
     margin: 0;
-    padding-top: 55px;
+    padding-top: 180px;
     color: #34495e;
     overflow-y: scroll;
   }
@@ -118,4 +132,23 @@ export default {
   .fade-enter, .fade-leave-active{
     opacity: 0
   }
+
+  footer{
+    background-color: #2f2f2f;
+    text-align: center;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      align-content: center;
+  }
+
 </style>
