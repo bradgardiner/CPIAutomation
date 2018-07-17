@@ -54,8 +54,7 @@ export default {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 30px;
     background-color: lighten(#eceef1, 30%);
-    margin: 0;
-    padding-top: 180px;
+    margin: auto;
     color: #34495e;
     overflow-y: scroll;
   }
@@ -66,7 +65,6 @@ export default {
 
   #header-logo{
     background-color: #1b1a1a;
-    position: fixed;
     z-index: 3;
     height: 55px;
     padding: 25px;
@@ -78,21 +76,22 @@ export default {
 
   .header{
     background-color: #2f2f2f;
-    position: fixed;
     z-index: 3;
-    height: 55px;
     top: 105px;
     left: 0;
     right: 0;
     padding: 10px;
     text-align:center;
-    .inner{
+
+    /* .inner{
       max-width: 800px;
       box-sizing: border-box;
       margin: 0px auto;
       padding: 15px 5px;
-    }
+    } */
+
   }
+
 
   a{
     color: rgba(255, 255, 255, .8);
