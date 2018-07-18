@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
+    "vue-concise-slider": "^2.4.8",
+    "vue-gallery-slideshow": "^1.2.3",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

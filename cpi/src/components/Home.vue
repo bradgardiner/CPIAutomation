@@ -1,7 +1,10 @@
 <template>
   <div id="home">
-    <div id="main-banner">
+    <div id="main-banner" style="width:100%;height:400px">
 
+      <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
+        <div slot="loading">loading...</div>
+       </slider>
     </div>
     <div class="container" id="engineering-banner">
       <img src="http://vijayshekharacademy.com/wp-content/uploads/2016/12/Engineering-Banner.jpg" alt="banner" width=100% height=50%>
@@ -28,11 +31,59 @@
 </template>
 
 <script>
+  import slider from 'vue-concise-slider'
   export default{
+
     name: 'home',
     data(){
       return{
+        pages: [{
+          html: '<img src="../assets/favico.png">',
+          style: {
 
+          }
+        },
+        {
+          html: '<div class="slider2">slider2</div>',
+          style:{
+            'background' : 'red'
+          }
+        },
+        {
+          html: '<div class="slider3">slider3</div>',
+          style:{
+            'background' : 'green'
+          }
+        }
+      ],
+      sliderinit: {
+          effect: 'fade',
+          currentPage: 0,
+          thresholdDistance:500,
+          thresholdTime:100,
+          autoplay:3000,
+          loop:true,
+          infinite:1,
+          slidesToScroll:1,
+          timingFunction: 'ease',
+          duration: 1000
+        }
+
+      }
+    },
+    components: {
+        slider
+    },
+    methods: {
+      // Listener event
+      slide (data) {
+        console.log(data)
+      },
+      onTap (data) {
+        console.log(data)
+      },
+      onInit (data) {
+        console.log(data)
       }
     }
   }

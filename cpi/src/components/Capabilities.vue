@@ -31,6 +31,41 @@
       <div class="column">
         <img id="eng-img" src="~../assets/lathe.jpg" >
       </div>
+
+      <div class="row" >
+        <div class="column" style="width:20%;">
+          <img  id="eng-img" style="width:50%;" src="~../assets/tools01.jpg" >
+        </div>
+        <div class="column" id="info" style="width:20%; padding-top:0;">
+          <h1 style="font-size:20px;">CNC Router Table:</h1>
+          <p>Cuts panels and flat stock quickly and with precision. You can provide your own DXF file or let our engineering team do the design for you.</p>
+        </div>
+        <div class="column" style="width:20%;">
+          <img  id="eng-img" style="width:50%;" src="~../assets/tools02.jpg" >
+        </div>
+        <div class="column" id="info" style="width:20%; padding-top:0;">
+          <h1 style="font-size:20px;">Laser Engraver:</h1>
+          <p>Create nametags or part labeling with our laser engraver. Name plates available in most metals or your choice of colored lamacoid plastic.</p>
+          </div>
+      </div>
+
+      <div class="row" >
+        <div class="column" style="width:20%;">
+          <img  id="eng-img" style="width:50%;" src="~../assets/tools03.jpg" >
+        </div>
+        <div class="column" id="info" style="width:20%; padding-top:0;">
+          <h1 style="font-size:20px;">CNC Machining:</h1>
+          <p>Let our in house experts manufacture just about any part you need. Design services available by in house engineering.</p>
+        </div>
+        <div class="column" style="width:20%;">
+          <img  id="eng-img" style="width:50%;" src="~../assets/tools04.jpg" >
+        </div>
+        <div class="column" id="info" style="width:20%; padding-top:0;">
+          <h1 style="font-size:20px;">Welding and Iron Working Services:</h1>
+          <p>Stick, MIG, TIG welding along with all traditional manufacturing techniques for your project to draw upon.</p>
+        </div>
+      </div>
+
     </div>
 
 

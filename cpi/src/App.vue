@@ -3,7 +3,6 @@
     <div id="header-logo">
       <router-link to="/">
         <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" >
-
       </router-link>
 
     </div>
@@ -66,7 +65,7 @@ export default {
   #header-logo{
     background-color: #1b1a1a;
     z-index: 3;
-    height: 55px;
+    height: 105px;
     padding: 25px;
     top: 0;
     left: 0;
