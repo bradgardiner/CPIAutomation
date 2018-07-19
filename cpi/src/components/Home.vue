@@ -1,12 +1,12 @@
 <template>
   <div id="home">
-    <div id="main-banner" style="width:100%;height:400px">
+    <div id="main-banner" style="width:100%; height:500px;">
 
       <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
         <div slot="loading">loading...</div>
        </slider>
     </div>
-    <div class="container" id="engineering-banner">
+    <!-- <div class="container" id="engineering-banner">
       <img src="http://vijayshekharacademy.com/wp-content/uploads/2016/12/Engineering-Banner.jpg" alt="banner" width=100% height=50%>
       <div class="eng-disc">
         <p style="color: black; z-index: 5;">Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.
@@ -21,7 +21,7 @@
     </div>
     <div id="services-banner">
       <img src="https://demandmoremedia.com/wp-content/uploads/2018/04/Services.png" widht=100% height=100%>
-    </div>
+    </div> -->
     <div id="brand-banner">
         <div>
           <img src="~../assets/brandBelt.png" width="100%">
@@ -38,21 +38,25 @@
     data(){
       return{
         pages: [{
-          html: '<img src="../assets/favico.png">',
+          html: '<div><h2>Creat Design Enjoy</h2><p>Scalable consumer and Industrial Solutions</p><button>Explore</button></div>',
           style: {
+            'background-image': 'url("https://i.imgur.com/YEKhryj.jpg")',
+            'width':'100%',
+          }
+        },
+        {
+          html: '<div><h2>Creat Design Enjoy</h2><p>Scalable consumer and Industrial Solutions</p><button>Explore</button></div>',
+          style:{
+            'background-image': 'url("https://i.imgur.com/LRfaPBd.jpg")',
+            'width':'100%',
+          }
+        },
+        {
+          html: '<div><h2>Creat Design Enjoy</h2><p>Scalable consumer and Industrial Solutions</p><button>Explore</button></div>',
+          style:{
+            'background-image': 'url("https://i.imgur.com/6th5rMd.jpg")',
+            'width':'100%',
 
-          }
-        },
-        {
-          html: '<div class="slider2">slider2</div>',
-          style:{
-            'background' : 'red'
-          }
-        },
-        {
-          html: '<div class="slider3">slider3</div>',
-          style:{
-            'background' : 'green'
           }
         }
       ],
@@ -90,6 +94,15 @@
 </script>
 
 <style>
+
+  /* h2{
+
+    width:auto;
+  }
+  p{
+    width:100%;
+  } */
+
   .container {
     position: relative;
     text-align: center;
@@ -126,6 +139,25 @@
     background-color: #008CBA;
     color: white;
     border: 2px solid #008CBA;
+  }
+
+  button{
+    font-size: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    background-color: #008CBA;
+    color: white;
+    border: 2px solid #008CBA;
+
+
+  }
+  button:hover{
+    filter: brightness(85%);
+    background-color: lighten(#008CBA, 50%);
+    color: white;
   }
 
   .eng-button:hover {
