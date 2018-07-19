@@ -6,6 +6,20 @@
         <div slot="loading">loading...</div>
        </slider>
     </div>
+    <div id="process" style="width:100%; height:300px;">
+      <div class="row">
+        <div class="column" style="width:25%;">
+          <img id="eng-img" style="height:200px;" src="~../assets/upload.png">
+        </div>
+        <div class="column" style="width:25%;">
+          <img id="eng-img" style="height:200px;" src="~../assets/design.png">
+        </div>
+        <div class="column" style="width:25%;">
+          <img id="eng-img" style="height:200px;" src="~../assets/build.png">
+        </div>
+
+      </div>
+    </div>
     <!-- <div class="container" id="engineering-banner">
       <img src="http://vijayshekharacademy.com/wp-content/uploads/2016/12/Engineering-Banner.jpg" alt="banner" width=100% height=50%>
       <div class="eng-disc">
