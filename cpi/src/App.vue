@@ -48,6 +48,9 @@ export default {
 </script>
 
 <style >
+    #app {
+      overflow: auto;
+    }
 
   body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -74,6 +77,7 @@ export default {
   }
 
   .header{
+
     background-color: #2f2f2f;
     z-index: 3;
     top: 105px;

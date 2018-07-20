@@ -1,47 +1,58 @@
 <template>
   <div id="home">
     <div id="main-banner" style="width:100%; height:500px;">
-
       <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
         <div slot="loading">loading...</div>
        </slider>
     </div>
+    <div class="section" >
+    <div class="wrap">
     <div id="process" style="width:100%; height:300px;">
-      <div class="row">
-        <div class="column" style="width:25%;">
-          <img id="eng-img" style="height:200px;" src="~../assets/upload.png">
-        </div>
-        <div class="column" style="width:25%;">
-          <img id="eng-img" style="height:200px;" src="~../assets/design.png">
-        </div>
-        <div class="column" style="width:25%;">
-          <img id="eng-img" style="height:200px;" src="~../assets/build.png">
-        </div>
+      <div class="columns">
+        <div class="col">
+          <img style="height:200px;" src="~../assets/upload.png">
+          <p> Upload a drawing for our engineers to review</p>
 
+        </div>
+        <div class="col">
+          <img style="height:200px;" src="~../assets/design.png">
+          <p> Have our talented engineers design a product</p>
+
+        </div>
+        <div class="col">
+          <img style="height:200px;" src="~../assets/build.png">
+          <p> We then build what you need</p>
+
+        </div>
+        <div class="col">
+          <img style="height:200px;" src="~../assets/delivery.png">
+          <p>Enjoy!</p>
+
+        </div>
       </div>
     </div>
-    <!-- <div class="container" id="engineering-banner">
-      <img src="http://vijayshekharacademy.com/wp-content/uploads/2016/12/Engineering-Banner.jpg" alt="banner" width=100% height=50%>
-      <div class="eng-disc">
-        <p style="color: black; z-index: 5;">Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.
-        </p>
+    <div id="eng-banner" class="section" style="height:300px;">
+      <div class="columns">
+        <div class="col">
+          <h2> Engineering Expertise</h2>
+          <p>Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.</p>
+        </div>
+        <div class="col">
+          <img src="~../assets/Banner.png" style="height:300px;">
+        </div>
       </div>
-      <router-link to="/engineering">
-        <button class="eng-button">More</button>
-      </router-link>
     </div>
-    <div id="capabilities-banner">
-      <img src="http://www.mcnealpro.com/files/capabilities-banner.jpg" width=100% height=100%>
+    <div id="banner-sec" class="section" style="height:300px;">
+
     </div>
-    <div id="services-banner">
-      <img src="https://demandmoremedia.com/wp-content/uploads/2018/04/Services.png" widht=100% height=100%>
-    </div> -->
     <div id="brand-banner">
         <div>
           <img src="~../assets/brandBelt.png" width="100%">
         </div>
     </div>
   </div>
+  </div>
+</div>
 </template>
 
 <script>
@@ -116,6 +127,30 @@
   p{
     width:100%;
   } */
+  .section{
+    max-width: 100%;
+    padding:20px;
+    margin:auto;
+  }
+
+  .wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+  }
+
+    .columns {
+      display:flex;
+      flex-wrap:wrap;
+      align-items: center;
+    }
+
+  .col {
+      flex-grow:1;
+      flex-basis:0;
+      padding:12px;
+  }
 
   .container {
     position: relative;
@@ -181,7 +216,16 @@
   }
 
   #brand-banner{
-    padding: 30px;
+    padding-top: 5em;
+
+  }
+
+  #eng-banner{
+    padding-top: 50px;
+  }
+
+  #banner-sec{
+    background-image: url();
   }
 
 
