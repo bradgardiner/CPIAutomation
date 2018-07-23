@@ -9,6 +9,8 @@ const Engineering = () => import('../components/Engineering.vue')
 const Capabilities = () => import('../components/Capabilities.vue')
 const Services = () => import('../components/Service.vue')
 const Contact = () => import('../components/Contact.vue')
+const Upload = () => import('../components/Upload.vue')
+const Business = () => import('../components/Business.vue')
 
 export default new Router({
   mode: 'history',
@@ -20,6 +22,8 @@ export default new Router({
     { path: '/capabilities', component: Capabilities},
     { path: '/services', component: Services},
     { path: '/contact', component: Contact},
-    { path: '/', redirect: '/home' }
-  ]
+    { path: '/', redirect: '/home' },
+    { path: '/upload', component: Upload},
+    { path: '/business', component: Business},
+    ]
 })

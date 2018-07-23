@@ -1,14 +1,14 @@
 <template>
   <div id="home">
-    <div id="main-banner" style="width:100%; height:500px;">
+    <div id="main-banner" style="width:100%; height:700px;">
       <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
         <div slot="loading">loading...</div>
        </slider>
     </div>
-    <div class="section" >
+    <div class="" >
     <div class="wrap">
-    <div id="process" style="width:100%; height:300px;">
-      <div class="columns">
+    <div id="process" style="width:100%; height:500px; text-align:center;">
+      <div class="columns" style="padding:2%; margin-left:5% ">
         <div class="col">
           <img style="height:200px;" src="~../assets/upload.png">
           <p> Upload a drawing for our engineers to review</p>
@@ -30,25 +30,29 @@
 
         </div>
       </div>
-    </div>
-    <div id="eng-banner" class="section" style="height:300px;">
-      <div class="columns">
-        <div class="col">
+      <div class="columns" style="height:500px;background-color:#70C1B3;  text-align: center;">
+        <div class="col" style="padding-left:5%; padding-right:5%;">
           <h2> Engineering Expertise</h2>
-          <p>Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.</p>
+          <p style="font-size:20px;">Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.</p>
         </div>
         <div class="col">
-          <img src="~../assets/Banner.png" style="height:300px;">
+          <img src="~../assets/lathe.jpg" style="width:100%;height:500px; padding-top:1%; margin-right: 0;">
         </div>
       </div>
-    </div>
-    <div id="banner-sec" class="section" style="height:300px;">
-
-    </div>
-    <div id="brand-banner">
-        <div>
-          <img src="~../assets/brandBelt.png" width="100%">
+      <div id="banner-sec" class="columns" style="height:500px;">
+        <div class="col" style=" padding-left: 30px; padding-bottom:20px; margin-left:50%; margin-right:3%; background-color:rgba(255,255,255,0.6);">
+          <h2> Services for your Business</h2>
+          <ul>
+            <li>Scaled Manufacturing for large or small business</li>
+            <li>Single-source integration to prived turn-key solutions</li>
+            <li>On-site or In-house repairs</li>
+          </ul>
+          <button> Get a Quote</button>
         </div>
+      </div>
+      <div id="brand-banner">
+            <img src="~../assets/brandBelt.png" width="100%">
+      </div>
     </div>
   </div>
   </div>
@@ -63,21 +67,21 @@
     data(){
       return{
         pages: [{
-          html: '<div><h2>Creat Design Enjoy</h2><p>Scalable consumer and Industrial Solutions</p><button>Explore</button></div>',
+          html: '<div><h2>Create Design Enjoy</h2><p>Scalable Consumer and Industrial Solutions Made Easy</p><button>Explore</button></div>',
           style: {
             'background-image': 'url("https://i.imgur.com/YEKhryj.jpg")',
             'width':'100%',
           }
         },
         {
-          html: '<div><h2>Creat Design Enjoy</h2><p>Scalable consumer and Industrial Solutions</p><button>Explore</button></div>',
+          html: '<div><h2>Create Design Enjoy</h2><p>Scalable Consumer and Industrial Solutions Made Easy</p><button>Explore</button></div>',
           style:{
             'background-image': 'url("https://i.imgur.com/LRfaPBd.jpg")',
             'width':'100%',
           }
         },
         {
-          html: '<div><h2>Creat Design Enjoy</h2><p>Scalable consumer and Industrial Solutions</p><button>Explore</button></div>',
+          html: '<div><h2>Create Design Enjoy</h2><p>Scalable Consumer and Industrial Solutions Made Easy</p><button>Explore</button></div>',
           style:{
             'background-image': 'url("https://i.imgur.com/6th5rMd.jpg")',
             'width':'100%',
@@ -129,7 +133,6 @@
   } */
   .section{
     max-width: 100%;
-    padding:20px;
     margin:auto;
   }
 
@@ -149,7 +152,7 @@
   .col {
       flex-grow:1;
       flex-basis:0;
-      padding:12px;
+      padding:0px;
   }
 
   .container {
@@ -216,16 +219,17 @@
   }
 
   #brand-banner{
-    padding-top: 5em;
 
   }
 
   #eng-banner{
-    padding-top: 50px;
+    background-color: #70C1B3;
   }
 
   #banner-sec{
-    background-image: url();
+    background-image: url("~../assets/build.jpg");
+    background-size: cover;
+
   }
 
 

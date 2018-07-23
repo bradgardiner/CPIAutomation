@@ -12,12 +12,14 @@
         <router-link to="/" exact>
           <img src="http://www.cpiautomation.com/sites/default/files/favico.ico" class="logo" alt="logo"></img>
         </router-link>
+        <router-link to="/upload">Upload a Drawing</router-link>
         <router-link to="/store">Store</router-link>
-        <router-link to="/engineering">Engineering</router-link>
+        <router-link to="/business">For Business</router-link>
+        <!-- <router-link to="/engineering">Engineering</router-link>
         <router-link to="/capabilities">Capabilities</router-link>
         <router-link to="/services">Services</router-link>
         <router-link to="/about">About us</router-link>
-        <router-link to="/contact">Contact us</router-link>
+        <router-link to="/contact">Contact us</router-link> -->
       </nav>
     </header>
     <transition name="fade" mode="out-in">
@@ -25,16 +27,6 @@
     </transition>
 
     <footer class="footer">
-      <div class="row">
-        <div class="column">
-          <h1> Something </h1>
-          <p> This  should be a section of links that redirect the user amongst the site</p>
-        </div>
-        <div class="column">
-          <h1> Something Else</h1>
-          <p> this should be another section of links for users</p>
-        </div>
-      </div>
 
     </footer>
   </div>
@@ -59,6 +51,8 @@ export default {
     margin: auto;
     color: #34495e;
     overflow-y: scroll;
+
+
   }
   a{
     color: #34495e;
