@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <div id="main-banner" style="width:100%; height:700px;">
+    <div id="main-banner" style="width:100%; height:800px;">
       <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
         <div slot="loading">loading...</div>
        </slider>
@@ -30,16 +30,40 @@
 
         </div>
       </div>
-      <div class="columns" style="height:500px;background-color:#70C1B3;  text-align: center;">
+      <div class="columns" style="height:700px;background-color:#70C1B3;  text-align: center;">
         <div class="col" style="padding-left:5%; padding-right:5%;">
-          <h2> Engineering Expertise</h2>
-          <p style="font-size:20px;">Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.</p>
+          <h2>Our Mission</h2>
+          <p style="font-size:20px;">Our goal at CPI is to bring your ideas to life. Our highly trained staff can work with you to construct what best suits your needs. Upload a drawing to get a quote today or contact on our our sales representatives to talk about your project. Or view our wide range of products to get what you need.</p>
         </div>
-        <div class="col">
-          <img src="~../assets/lathe.jpg" style="width:100%;height:500px; padding-top:1%; margin-right: 0;">
+        <div class="col" style="background-size: cover;">
+
+          <img src="~../assets/lathe.jpg" style="width:88%; padding-top:1%; margin-right: 0;">
         </div>
       </div>
-      <div id="banner-sec" class="columns" style="height:500px;">
+      <div class="columns" style="height: 500px;">
+        <div class="col" style="padding:2%;">
+          <div class="card">
+            <h1> Some Product Card</h1>
+            <p> Some image goes here</p>
+            <p> Some Descriptiopn goes here</p>
+          </div>
+        </div>
+        <div class="col" style="padding:2%;">
+          <div class="card">
+            <h1> Some Product Card</h1>
+            <p> Some image goes here</p>
+            <p> Some Descriptiopn goes here</p>
+          </div>
+        </div>
+        <div class="col" style="padding:2%;">
+          <div class="card">
+            <h1> Some Product Card</h1>
+            <p> Some image goes here</p>
+            <p> Some Descriptiopn goes here</p>
+          </div>
+        </div>
+      </div>
+      <div id="banner-sec" class="columns" style="height:700px;">
         <div class="col" style=" padding-left: 30px; padding-bottom:20px; margin-left:50%; margin-right:3%; background-color:rgba(255,255,255,0.6);">
           <h2> Services for your Business</h2>
           <ul>
@@ -50,8 +74,38 @@
           <button> Get a Quote</button>
         </div>
       </div>
+      <div class="columns" style="height: 500px;">
+        <div class="col" style="padding:2%;">
+          <div class="card">
+            <h1> Some Product Card</h1>
+            <p> Some image goes here</p>
+            <p> Some Descriptiopn goes here</p>
+          </div>
+        </div>
+        <div class="col" style="padding:2%;">
+          <div class="card">
+            <h1> Some Product Card</h1>
+            <p> Some image goes here</p>
+            <p> Some Descriptiopn goes here</p>
+          </div>
+        </div>
+        <div class="col" style="padding:2%;">
+          <div class="card">
+            <h1> Some Product Card</h1>
+            <p> Some image goes here</p>
+            <p> Some Descriptiopn goes here</p>
+          </div>
+        </div>
+      </div>
       <div id="brand-banner">
             <img src="~../assets/brandBelt.png" width="100%">
+      </div>
+      <div class="footer">
+        <div class="section">
+          <div class="flex">
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -69,7 +123,7 @@
         pages: [{
           html: '<div><h2>Create Design Enjoy</h2><p>Scalable Consumer and Industrial Solutions Made Easy</p><button>Explore</button></div>',
           style: {
-            'background-image': 'url("https://i.imgur.com/YEKhryj.jpg")',
+            'background-image': 'url("https://i.imgur.com/hZ7cH9w.jpg")',
             'width':'100%',
           }
         },
@@ -131,10 +185,32 @@
   p{
     width:100%;
   } */
+
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover{
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
   .section{
     max-width: 100%;
     margin:auto;
   }
+  .footer {
+    min-height:100px;
+    background:#2f2f2f;
+  }
+  .flex {
+  color:rgba(255,255,255, 0.2);
+  font-weight:bold;
+  display:flex;
+  flex-grow:1;
+  justify-content: space-between;
+}
+
 
   .wrap{
     display:flex;

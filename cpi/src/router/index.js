@@ -11,6 +11,7 @@ const Services = () => import('../components/Service.vue')
 const Contact = () => import('../components/Contact.vue')
 const Upload = () => import('../components/Upload.vue')
 const Business = () => import('../components/Business.vue')
+const Gallery = () => import('../components/Gallery.vue')
 
 export default new Router({
   mode: 'history',
@@ -25,5 +26,6 @@ export default new Router({
     { path: '/', redirect: '/home' },
     { path: '/upload', component: Upload},
     { path: '/business', component: Business},
+    { path: '/gallery', component: Gallery}
     ]
 })

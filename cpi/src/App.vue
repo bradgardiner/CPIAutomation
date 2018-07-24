@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <div id="header-logo">
+    <!-- <div id="header-logo">
       <router-link to="/">
         <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" >
       </router-link>
 
-    </div>
+    </div> -->
 
     <header class="header">
       <nav class="inner">
         <router-link to="/" exact>
-          <img src="http://www.cpiautomation.com/sites/default/files/favico.ico" class="logo" alt="logo"></img>
+          <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" class="logo" alt="logo"></img>
         </router-link>
         <router-link to="/upload">Upload a Drawing</router-link>
         <router-link to="/store">Store</router-link>
         <router-link to="/business">For Business</router-link>
+        <router-link to="/gallery">Gallery</router-link>
         <!-- <router-link to="/engineering">Engineering</router-link>
         <router-link to="/capabilities">Capabilities</router-link>
         <router-link to="/services">Services</router-link>
@@ -41,7 +42,7 @@ export default {
 
 <style >
     #app {
-      overflow: auto;
+      overflow: visible;
     }
 
   body{
@@ -50,7 +51,7 @@ export default {
     background-color: lighten(#eceef1, 30%);
     margin: auto;
     color: #34495e;
-    overflow-y: scroll;
+    /* overflow-y: visible; */
 
 
   }
@@ -77,8 +78,8 @@ export default {
     top: 105px;
     left: 0;
     right: 0;
-    padding: 10px;
-    text-align:center;
+    padding: 15px;
+    /* text-align:center; */
 
     /* .inner{
       max-width: 800px;
@@ -113,14 +114,14 @@ export default {
     }
 
   .logo{
-    padding: 10px;
+    /* padding: 10px;
     padding-left: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; */
 
-    width: 24px;
+    /* width: 24px; */
     margin-right: 10px;
     display: inline-block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
 
   .fade-enter-active, .fade-leave-active{

@@ -1,7 +1,7 @@
 <template>
-  <div id="upload" style="padding-top: 10%;">
+  <div id="upload" style="padding-top: 8%; ">
     <div class="wrap">
-      <div class="sections">
+      <div  class="sections">
         <div class="section">
           <div class="label">Full Name</div>
           <input type="text" v-model="name"/>
@@ -63,6 +63,7 @@ export default{
 </script>
 
 <style>
+
 
 .warning {
   margin-top:12px;

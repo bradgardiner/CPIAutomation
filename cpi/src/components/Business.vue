@@ -1,6 +1,6 @@
 <template>
   <div id="business">
-    <div id="main-banner" style="width:100%; height:700px;">
+    <div id="main-banner" style="width:100%; height:800px;">
       <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
         <div slot="loading">loading...</div>
        </slider>
