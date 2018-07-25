@@ -13,3 +13,13 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
+import * as VueGoogleMaps from 'vue2-google-maps'
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyCZKDjKs-zJ5HsxODM_a6YrccgYb3ueXcg',
+    libraries: 'places',
+  },
+ })

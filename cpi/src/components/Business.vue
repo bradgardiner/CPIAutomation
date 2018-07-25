@@ -19,7 +19,7 @@
         <div class="columns">
           <div class="col">
             <h2>Mechanical</h2>
-            <p>Something about being an 820 distributor with a wide variety of parts and materials that allow for the righht solution</p>
+            <p>CPI can help you with the design and engineering of your project's mechanical system. Whether it's a static guarding solution or a complex machine with many moving parts, CPI can help you design, document, source, and fabricate. </p>
           </div>
           <div class="col">
             <h2> some picture of 8020 here</h2>

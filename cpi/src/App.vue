@@ -16,6 +16,7 @@
         <router-link to="/store">Store</router-link>
         <router-link to="/business">For Business</router-link>
         <router-link to="/gallery">Gallery</router-link>
+        <router-link to="/contact">Contact Us</router-link>
         <!-- <router-link to="/engineering">Engineering</router-link>
         <router-link to="/capabilities">Capabilities</router-link>
         <router-link to="/services">Services</router-link>

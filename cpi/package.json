@@ -15,7 +15,8 @@
     "vue-gallery": "^1.4.0",
     "vue-gallery-slideshow": "^1.2.3",
     "vue-product-zoomer": "^2.0.10",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue2-google-maps": "^0.10.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

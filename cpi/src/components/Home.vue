@@ -37,7 +37,7 @@
         </div>
         <div class="col" style="background-size: cover;">
 
-          <img src="~../assets/lathe.jpg" style="width:88%; padding-top:1%; margin-right: 0;">
+          <img src="~../assets/lathe.jpg" style="width:100%; padding-top:1%; margin-right: 0;">
         </div>
       </div>
       <div class="columns" style="height: 500px;">
@@ -222,7 +222,7 @@
     .columns {
       display:flex;
       flex-wrap:wrap;
-      align-items: center;
+      align-items:center;
     }
 
   .col {
