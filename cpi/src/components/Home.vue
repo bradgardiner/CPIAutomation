@@ -72,7 +72,7 @@
           <h2> Services for your Business</h2>
           <ul>
             <li>Scaled Manufacturing for large or small business</li>
-            <li>Single-source integration to prived turn-key solutions</li>
+            <li>Single-source integration to provide turn-key solutions</li>
             <li>On-site or In-house repairs</li>
           </ul>
           <button> Get a Quote</button>
@@ -189,6 +189,7 @@
   p{
     width:100%;
   } */
+
 
   h3{
     color: #247ab5;

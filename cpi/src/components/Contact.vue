@@ -1,6 +1,6 @@
 <template>
-  <div id="cont" style="margin-left:15%; margin-right:10%; font-size: 20px">
-      <div class="wrap" >
+  <div id="cont" style="background-image:url('https://i.imgur.com/r40JWPr.png'); background-size:cover;">
+      <div class="wrap"  style="margin-left:15%; margin-right:10%; font-size: 20px; ">
         <div style="heigh:200px; width:100%;  text-align:center;">
           <h1>Contact CPI</h1>
           <h2>How can we best help?</h2>
@@ -130,6 +130,11 @@ export default{
 </script>
 
 <style scoped>
+
+  body{
+      background-image:url('https://i.imgur.com/EfCrBdR.png');
+      background-size:cover;
+  }
 
   .wrap{
     display:flex;

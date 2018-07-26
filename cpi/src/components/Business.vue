@@ -1,13 +1,13 @@
 <template>
   <div id="business">
-    <div id="main-banner" style="width:100%; height:800px;">
+    <div id="main-banner" style="width:100%; height:800px; ">
       <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
         <div slot="loading">loading...</div>
        </slider>
     </div>
-    <div class="">
-      <div class="wrap" style="margin: 20%; font-size:20px;">
-        <div id="cpi" class="columns">
+    <div id="bg-layer" style="background-image:url('https://i.imgur.com/r40JWPr.png'); background-size:cover;">
+      <div class="wrap" style="margin-left: 20%; margin-right:20%; font-size:20px;">
+        <div id="cpi" class="columns" style="padding-top:2%;">
           <div class="col">
             <img src="~../assets/CPI-Building.png">
           </div>
@@ -125,6 +125,9 @@ export default{
 
 <style >
 
+
+  body{
+  }
 
 
   #eng-section{
