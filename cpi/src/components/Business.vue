@@ -6,58 +6,49 @@
        </slider>
     </div>
     <div class="">
-      <div class="wrap">
-        <div class="columns">
+      <div class="wrap" style="margin: 20%; font-size:20px;">
+        <div id="cpi" class="columns">
           <div class="col">
-            <h2>Engineering</h2>
-            <p> Allow our skilled engineers to help designa solution that best fits your busineses needs</p>
+            <img src="~../assets/CPI-Building.png">
           </div>
           <div class="col">
-            <h2> Some picture involving engineering here</h2>
+            <h2> At CPI Automation</h2>
+            <p> From helping you find a component, to full scale design and fabrication - CPI is ready to help you with whatever size project you have</p>
           </div>
         </div>
-        <div class="columns">
+        <div  id="eng-section" class="columns">
           <div class="col">
+            <h2>Engineering</h2>
+            <p> Whether you are looking for a fully hands-off and turn-key solution, or are simply looking to bring in some additional expertise to assist with a particular discipline within your project, CPI experts can help you make your idea a reality. With decades of experience in Hydraulics, Pneumatics, Mechanics, Controls and Automation - CPI experts are ready to assist.</p>
+          </div>
+        </div>
+        <div id="mechanical" class="columns">
+          <div  class="col">
             <h2>Mechanical</h2>
             <p>CPI can help you with the design and engineering of your project's mechanical system. Whether it's a static guarding solution or a complex machine with many moving parts, CPI can help you design, document, source, and fabricate. </p>
           </div>
-          <div class="col">
-            <h2> some picture of 8020 here</h2>
-          </div>
         </div>
-        <div class="columns">
-          <div class="col">
+        <div id="pneumatic" class="columns">
+          <div  class="col">
             <h2>Pneumatics</h2>
             <p>When you're looking to add air power to your project, CPI is your partner for success. From selection of air line preparation components, to the design of pneumatic actuation devices, CPI has the expertise you can trust. </p>
           </div>
-          <div class="col">
-            <h2>Something about being a distributor of pneumatic </h2>
-          </div>
         </div>
-        <div class="columns">
+        <div  id="hydraulic" class="columns">
           <div class="col">
             <h2>Hydraulics</h2>
             <p>For higher power applications requiring the use of hydraulic systems, CPI has decades of experience at your project's service. From component selection to primary integration services, CPI can assist you at any level of the fluid system design. </p>
           </div>
-          <div class="col">
-            <h2> some picture of hydraulics here</h2>
-          </div>
         </div>
-        <div class="columns">
+        <div id="electrical" class="columns">
           <div class="col">
             <h2>Electrical</h2>
             <p>For "smarter" systems, CPI can offer a full range of control and automation services. Programmable Logic Controller (PLC) programming/integration, sensor integration, electric motors and actuation selection, are a few of the automation services that we can provide.</p>
           </div>
-          <div class="col">
-            <h2> some picture of Electrical here</h2>
-          </div>
         </div>
-        <div class="columns">
+        <div id="services" class="columns">
           <div class="col">
             <h2> something about repairs, services, integration here</h2>
-          </div>
-          <div class="col">
-            <h2> some picture of repairs, services, integration here</h2>
           </div>
         </div>
 
@@ -130,9 +121,59 @@ export default{
   }
 }
 
-
-
 </script>
 
-<style>
+<style >
+
+
+
+  #eng-section{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    padding-bottom: 2%;
+
+  }
+
+  #mechanical{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    padding-bottom: 2%;
+
+
+  }
+
+  #pneumatic{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    padding-bottom: 2%;
+
+  }
+
+  #hydraulic{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    padding-bottom: 2%;
+
+  }
+
+  #electrical{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    padding-bottom: 2%;
+
+  }
+
+  #services{
+    padding-bottom: 2%;
+
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+  }
+
 </style>

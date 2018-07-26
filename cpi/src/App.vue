@@ -49,7 +49,7 @@ export default {
   body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 30px;
-    background-color: lighten(#eceef1, 30%);
+    background-color: #edeff0;
     margin: auto;
     color: #34495e;
     /* overflow-y: visible; */

@@ -8,23 +8,27 @@
     <div class="" >
     <div class="wrap">
     <div id="process" style="width:100%; height:500px; text-align:center;">
-      <div class="columns" style="padding:2%; margin-left:5% ">
+      <div class="columns" style="padding:2%; margin-left:5%; font-size:20px; color: #247ab5;">
         <div class="col">
+          <h3> Upload</h3>
           <img style="height:200px;" src="~../assets/upload.png">
           <p> Upload a drawing for our engineers to review</p>
 
         </div>
         <div class="col">
+          <h3>Design</h3>
           <img style="height:200px;" src="~../assets/design.png">
           <p> Have our talented engineers design a product</p>
 
         </div>
         <div class="col">
+          <h3>Manufacture</h3>
           <img style="height:200px;" src="~../assets/build.png">
           <p> We then build what you need</p>
 
         </div>
         <div class="col">
+          <h3>Delivery</h3>
           <img style="height:200px;" src="~../assets/delivery.png">
           <p>Enjoy!</p>
 
@@ -55,13 +59,13 @@
             <p> Some Descriptiopn goes here</p>
           </div>
         </div>
-        <div class="col" style="padding:2%;">
+        <!-- <div class="col" style="padding:2%;">
           <div class="card">
             <h1> Some Product Card</h1>
             <p> Some image goes here</p>
             <p> Some Descriptiopn goes here</p>
           </div>
-        </div>
+        </div> -->
       </div>
       <div id="banner-sec" class="columns" style="height:700px;">
         <div class="col" style=" padding-left: 30px; padding-bottom:20px; margin-left:50%; margin-right:3%; background-color:rgba(255,255,255,0.6);">
@@ -89,13 +93,13 @@
             <p> Some Descriptiopn goes here</p>
           </div>
         </div>
-        <div class="col" style="padding:2%;">
+        <!-- <div class="col" style="padding:2%;">
           <div class="card">
             <h1> Some Product Card</h1>
             <p> Some image goes here</p>
             <p> Some Descriptiopn goes here</p>
           </div>
-        </div>
+        </div> -->
       </div>
       <div id="brand-banner">
             <img src="~../assets/brandBelt.png" width="100%">
@@ -185,6 +189,10 @@
   p{
     width:100%;
   } */
+
+  h3{
+    color: #247ab5;
+  }
 
   .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

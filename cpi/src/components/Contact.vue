@@ -1,6 +1,11 @@
 <template>
-  <div id="cont" style="margin-left:15%; margin-right:15%; font-size: 20px">
+  <div id="cont" style="margin-left:15%; margin-right:10%; font-size: 20px">
       <div class="wrap" >
+        <div style="heigh:200px; width:100%;  text-align:center;">
+          <h1>Contact CPI</h1>
+          <h2>How can we best help?</h2>
+          <p> (905)-625-4805</p>
+        </div>
         <div class="columns">
           <div class="col">
             <h2>Customer Service</h2>
@@ -24,6 +29,7 @@
         <div class="columns">
           <div class="col">
             <h3> Head Office</h3>
+            <p> 5155 Timberlea Blvd, Mississauga ON L4W 2S3</p>
             <p>CPI is located in Mississauga, Ontario, Canada just a short drive west of Toronto proper. The nearest major intersection is Eglinton and Tomken. Operations at the Mississauga facility include:</p>
             <ul>
               <li> Sales and Ordering</li>
@@ -35,6 +41,7 @@
           </div>
           <div class="col">
             <h3>Kitchener Branch Office</h3>
+            <p> 62 Mcbrine Pl Unit 17, Kitchener, ON N2R 1G8</p>
             <p> For your convenience, we also maintain a branch office to service western Ontario. Services provided at the Kitchener office include:</p>
             <ul>
               <li> Sales and Ordering</li>
@@ -45,7 +52,7 @@
         </div>
         <div class="columns" style="padding: 2%;">
           <div class="col">
-            <div class="google-map" :id="mapName" style="padding-right:25%;">
+            <div class="google-map" :id="mapName" style="padding-right:10%;">
               <GmapMap
                 :center="{lat:43.6267149, lng:-79.6408304}"
                 :zoom="14"
@@ -64,7 +71,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="google-map" :id="mapName" style="padding-left:25%;">
+            <div class="google-map" :id="mapName" style="margin-right:10%;">
               <GmapMap
                 :center="{lat:43.4011699, lng:-80.4762357}"
                 :zoom="14"
@@ -94,8 +101,31 @@ export default{
   props: ['name'],
   data: function () {
     return {
+      mapName: this.name+"-map",
+      markerCoordinates: [{
+        latitude: 43.6267149,
+        longitude: -79.6408304
+      },{
+        latitude: 43.4011699,
+        longitude: -80.4762357
+
+      }],
+      map: null,
+      bounds: null,
+      markers:[]
     }
   },
+  mounted: function () {
+    this.markerCoordinates.forEach((coord) => {
+      const position = new google.maps.LatLng(coord.latitude, coord.longitude);
+      const marker = new google.maps.Marker({
+        position,
+        map: this.map
+      });
+    this.markers.push(marker)
+      this.map.fitBounds(this.bounds.extend(position))
+    });
+  }
 }
 </script>
 
