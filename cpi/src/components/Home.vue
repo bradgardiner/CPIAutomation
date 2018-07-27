@@ -34,38 +34,24 @@
 
         </div>
       </div>
-      <div class="columns" style="height:700px;background-color:#70C1B3;  text-align: center;">
-        <div class="col" style="padding-left:5%; padding-right:5%;">
+      <div class="columns" style="height: 700px; align-content:center; background-color:#247ab5; text-align: center;">
+        <div class="col" style="align-content:center; padding-left:5%; padding-right:5%;">
           <h2>Our Mission</h2>
           <p style="font-size:20px;">Our goal at CPI is to bring your ideas to life. Our highly trained staff can work with you to construct what best suits your needs. Upload a drawing to get a quote today or contact on our our sales representatives to talk about your project. Or view our wide range of products to get what you need.</p>
         </div>
-        <div class="col" style="background-size: cover;">
-
-          <img src="~../assets/lathe.jpg" style="width:100%; padding-top:1%; margin-right: 0;">
+        <div class="col">
+          <img src="~../assets/019.jpg" style="height: 700px; padding-top: 8px;">
         </div>
       </div>
-      <div class="columns" style="height: 500px;">
-        <div class="col" style="padding:2%;">
-          <div class="card">
-            <h1> Some Product Card</h1>
-            <p> Some image goes here</p>
-            <p> Some Descriptiopn goes here</p>
+      <div class="columns" style="height: 600px;">
+          <div class="panel">
+            <h1> Mechanical</h1>
           </div>
-        </div>
-        <div class="col" style="padding:2%;">
-          <div class="card">
-            <h1> Some Product Card</h1>
-            <p> Some image goes here</p>
-            <p> Some Descriptiopn goes here</p>
+
+          <div class="panel2">
+            <h1>Pneumatics</h1>
           </div>
-        </div>
-        <!-- <div class="col" style="padding:2%;">
-          <div class="card">
-            <h1> Some Product Card</h1>
-            <p> Some image goes here</p>
-            <p> Some Descriptiopn goes here</p>
-          </div>
-        </div> -->
+
       </div>
       <div id="banner-sec" class="columns" style="height:700px;">
         <div class="col" style=" padding-left: 30px; padding-bottom:20px; margin-left:50%; margin-right:3%; background-color:rgba(255,255,255,0.6);">
@@ -78,39 +64,19 @@
           <button> Get a Quote</button>
         </div>
       </div>
-      <div class="columns" style="height: 500px;">
-        <div class="col" style="padding:2%;">
-          <div class="card">
-            <h1> Some Product Card</h1>
-            <p> Some image goes here</p>
-            <p> Some Descriptiopn goes here</p>
+      <div class="columns" style="height: 600px;">
+        <!-- <div class="col" style="margin-left:2%;"> -->
+          <div class="panel3">
+            <h1> Hydraulics</h1>
           </div>
-        </div>
-        <div class="col" style="padding:2%;">
-          <div class="card">
-            <h1> Some Product Card</h1>
-            <p> Some image goes here</p>
-            <p> Some Descriptiopn goes here</p>
+          <div class="panel4">
+            <h1> Electronics</h1>
           </div>
-        </div>
-        <!-- <div class="col" style="padding:2%;">
-          <div class="card">
-            <h1> Some Product Card</h1>
-            <p> Some image goes here</p>
-            <p> Some Descriptiopn goes here</p>
-          </div>
-        </div> -->
       </div>
       <div id="brand-banner">
             <img src="~../assets/brandBelt.png" width="100%">
       </div>
-      <div class="footer">
-        <div class="section">
-          <div class="flex">
 
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   </div>
@@ -195,14 +161,133 @@
     color: #247ab5;
   }
 
+  .panel
+{
+    background-image:url("~../assets/mech-panel.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 50%;
+    height: 500px;
+
+    transform: scale(1.15);
+    left:10%;
+
+
+
+
+}
+
+
+.panel2
+{
+  background-image:url("~../assets/pneumatic-panel.png");
+  background-size: 100% 100%;
+  width: 50%;
+  height: 500px;
+  position: relative;
+  right: 10%;
+  transform: scale(1.15);
+
+
+}
+
+.panel3
+{
+  background-image:url("~../assets/hydraulics-panel.png");
+  background-size: 100% 100%;
+  width: 50%;
+  height: 500px;
+  position: relative;
+  transform: scale(1.15);
+  left: 10%;
+
+}
+
+
+.panel4
+{
+  background-image:url("~../assets/electronics-panel.png");
+  background-size: 100% 100%;
+  width: 50%;
+  height: 500px;
+  position: relative;
+  right:10%;
+  transform: scale(1.15);
+
+
+
+}
+  .panel h1{
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 1%;
+    left: 30%;
+  }
+
+  .panel3 h1{
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 1%;
+    left: 30%;
+  }
+
+
+.panel4 h1{
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 1%;
+  bottom: 0;
+  left: 50%;
+}
+.panel2 h1{
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 1%;
+
+  bottom: 0;
+  left: 50%;
+}
+
+
+/* .panel4:after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  border-top: 400px solid transparent;
+  border-left: 600px solid #edeff0;
+  width: 0;
+} */
+
+
   .card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 8px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
   }
 
-  .card:hover{
-     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  .panel:hover{
+    box-shadow: -20px -20px 20px 0px rgba(0,0,0,0.2);
+    transform: scale(1.17);
   }
+
+  .panel2:hover{
+    box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.2);
+    transform: scale(1.17);
+  }
+
+  .panel3:hover{
+    box-shadow: -20px -20px 20px 0px rgba(0,0,0,0.2);
+    transform: scale(1.17);
+  }
+
+  .panel4:hover{
+     box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.2);
+     transform: scale(1.17);
+  }
+
 
   .section{
     max-width: 100%;
