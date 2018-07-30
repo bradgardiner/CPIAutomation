@@ -13,7 +13,7 @@
           <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" class="logo" alt="logo"></img>
         </router-link>
         <router-link to="/upload">Upload a Drawing</router-link>
-        <router-link to="/store">Store</router-link>
+        <a href="https://cpi-automation.myshopify.com/">Store</a>
         <router-link to="/business">For Business</router-link>
         <router-link to="/gallery">Gallery</router-link>
         <router-link to="/contact">Contact Us</router-link>
@@ -28,9 +28,7 @@
       <router-view class="view"></router-view>
     </transition>
 
-    <footer class="footer">
 
-    </footer>
   </div>
 
 </template>
@@ -106,11 +104,11 @@ export default {
       color: #fff;
     }
 
-    &.router-link-active
+    a:router-link-active
       {color: #fff;
       font-weight: 400;}
 
-    &:nth-child(6){
+    a:nth-child(6){
       margin-right: 0;
     }
 

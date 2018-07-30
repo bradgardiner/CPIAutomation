@@ -34,16 +34,16 @@
 
         </div>
       </div>
-      <div class="columns" style="height: 700px; align-content:center; background-color:#247ab5; text-align: center;">
-        <div class="col" style="align-content:center; padding-left:5%; padding-right:5%;">
+      <div class="columns" style="height: 700px; background-color:#247ab5; text-align: center;">
+        <div class="col" id="our-mission" >
           <h2>Our Mission</h2>
           <p style="font-size:20px;">Our goal at CPI is to bring your ideas to life. Our highly trained staff can work with you to construct what best suits your needs. Upload a drawing to get a quote today or contact on our our sales representatives to talk about your project. Or view our wide range of products to get what you need.</p>
         </div>
-        <div class="col">
-          <img src="~../assets/019.jpg" style="height: 700px; padding-top: 8px;">
+        <div class="col" style="height: 100%;">
+          <img src="~../assets/019.jpg" style="height:100%; ">
         </div>
       </div>
-      <div class="columns" style="height: 600px;">
+      <div class="columns" style="height: 600px; margin: auto;">
           <div class="panel">
             <h1> Mechanical</h1>
           </div>
@@ -64,7 +64,7 @@
           <button> Get a Quote</button>
         </div>
       </div>
-      <div class="columns" style="height: 600px;">
+      <div class="columns" style="height: 600px; maring: auto;">
         <!-- <div class="col" style="margin-left:2%;"> -->
           <div class="panel3">
             <h1> Hydraulics</h1>
@@ -156,6 +156,15 @@
     width:100%;
   } */
 
+  #our-mission{
+    align-content:center;
+    padding-top: 20%;
+    padding-left:5%;
+    padding-right:5%;
+    height: 100%;
+    width: 40%;
+  }
+
 
   h3{
     color: #247ab5;
@@ -167,11 +176,13 @@
     background-size: 100% 100%;
     position: relative;
     width: 50%;
-    height: 500px;
+    height: 83%;
 
     transform: scale(1.15);
     left:10%;
 
+    flex-grow:1;
+    flex-basis:0;
 
 
 
@@ -183,10 +194,12 @@
   background-image:url("~../assets/pneumatic-panel.png");
   background-size: 100% 100%;
   width: 50%;
-  height: 500px;
+  height: 83%;
   position: relative;
   right: 10%;
   transform: scale(1.15);
+  flex-grow:1;
+  flex-basis:0;
 
 
 }
@@ -196,10 +209,12 @@
   background-image:url("~../assets/hydraulics-panel.png");
   background-size: 100% 100%;
   width: 50%;
-  height: 500px;
+  height: 83%;
   position: relative;
   transform: scale(1.15);
   left: 10%;
+  flex-grow:1;
+  flex-basis:0;
 
 }
 
@@ -209,10 +224,12 @@
   background-image:url("~../assets/electronics-panel.png");
   background-size: 100% 100%;
   width: 50%;
-  height: 500px;
+  height: 83%;
   position: relative;
   right:10%;
   transform: scale(1.15);
+  flex-grow:1;
+  flex-basis:0;
 
 
 
@@ -222,7 +239,9 @@
     background-color: rgb(255, 255, 255, 0.6);
     border-radius: 5px;
     padding: 1%;
-    left: 30%;
+    left: 20%;
+    width: 50%;
+    font-size: 200%;
   }
 
   .panel3 h1{
@@ -230,7 +249,10 @@
     background-color: rgb(255, 255, 255, 0.6);
     border-radius: 5px;
     padding: 1%;
-    left: 30%;
+    left: 20%;
+    width: 50%;
+    font-size: 200%;
+
   }
 
 
@@ -239,17 +261,22 @@
   background-color: rgb(255, 255, 255, 0.6);
   border-radius: 5px;
   padding: 1%;
-  bottom: 0;
-  left: 50%;
+  bottom: 5%;
+  left: 40%;
+  width: 50%;
+  font-size: 200%;
+
 }
 .panel2 h1{
   position: absolute;
   background-color: rgb(255, 255, 255, 0.6);
   border-radius: 5px;
   padding: 1%;
+  font-size: 200%;
 
-  bottom: 0;
-  left: 50%;
+  bottom: 5%;
+  left: 40%;
+  width: 50%;
 }
 
 
@@ -317,6 +344,7 @@
       display:flex;
       flex-wrap:wrap;
       align-items:center;
+      position: relative;
     }
 
   .col {
