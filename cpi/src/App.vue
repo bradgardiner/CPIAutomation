@@ -12,7 +12,7 @@
         <router-link to="/" exact>
           <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" class="logo" alt="logo"></img>
         </router-link>
-        <router-link to="/upload">Upload a Drawing</router-link>
+        <router-link to="/upload">Request a Quote</router-link>
         <a href="https://cpi-automation.myshopify.com/">Store</a>
         <router-link to="/business">For Business</router-link>
         <router-link to="/gallery">Gallery</router-link>

@@ -39,21 +39,37 @@
           <h2>Our Mission</h2>
           <p style="font-size:20px;">Our goal at CPI is to bring your ideas to life. Our highly trained staff can work with you to construct what best suits your needs. Upload a drawing to get a quote today or contact on our our sales representatives to talk about your project. Or view our wide range of products to get what you need.</p>
         </div>
-        <div class="col" style="height: 100%;">
-          <img src="~../assets/019.jpg" style="height:100%; ">
+        <div class="col" id="our-mission">
+          <h2> Engineering</h2>
+          <!-- <img src="~../assets/019.jpg" style="height:100%; "> -->
+        </div>
+        <div class="col" id="our-mission">
+          <h2> Services</h2>
         </div>
       </div>
-      <div class="columns" style="height: 600px; margin: auto;">
-          <div class="panel">
-            <h1> Mechanical</h1>
+      <div class="columns" style="height: 300px; padding:5% 2%;">
+          <div class="col">
+            <!-- <h1> Mechanical</h1> -->
+            <img id="panel" src="~../assets/mech-panel-V2.png" style="width:60%; ">
+
           </div>
 
-          <div class="panel2">
-            <h1>Pneumatics</h1>
+          <div class="col">
+            <!-- <h1>Electrical</h1> -->
+            <img id="panel" src="~../assets/mech-panel-V2.png" style="width:60%; ">
+
           </div>
+          <div class="col">
+            <img id="panel" src="~../assets/mech-panel-V2.png" style="width:60%; ">
+          </div>
+
+          <div  class="col">
+            <img id="panel" src="~../assets/mech-panel-V2.png" style="width:60%; ">
+          </div>
+
 
       </div>
-      <div id="banner-sec" class="columns" style="height:700px;">
+      <!-- <div id="banner-sec" class="columns" style="height:700px;">
         <div class="col" style=" padding-left: 30px; padding-bottom:20px; margin-left:50%; margin-right:3%; background-color:rgba(255,255,255,0.6);">
           <h2> Services for your Business</h2>
           <ul>
@@ -63,16 +79,16 @@
           </ul>
           <button> Get a Quote</button>
         </div>
-      </div>
-      <div class="columns" style="height: 600px; maring: auto;">
-        <!-- <div class="col" style="margin-left:2%;"> -->
-          <div class="panel3">
-            <h1> Hydraulics</h1>
-          </div>
-          <div class="panel4">
-            <h1> Electronics</h1>
-          </div>
-      </div>
+      </div> -->
+      <!-- <div class="columns" style="height: 400px; maring: auto;">
+        <div class="panel3">
+        </div>
+
+        <div class="panel4">
+        </div>
+
+
+      </div> -->
       <div id="brand-banner">
             <img src="~../assets/brandBelt.png" width="100%">
       </div>
@@ -162,7 +178,7 @@
     padding-left:5%;
     padding-right:5%;
     height: 100%;
-    width: 40%;
+    width: 30%;
   }
 
 
@@ -172,31 +188,28 @@
 
   .panel
 {
-    background-image:url("~../assets/mech-panel.png");
+    background-image:url("~../assets/mech-panel-V2.png");
     background-size: 100% 100%;
     position: relative;
-    width: 50%;
-    height: 83%;
+    width: 40%;
+    height: 40%;
+
 
     transform: scale(1.15);
-    left:10%;
+    /* left:5%; */
 
     flex-grow:1;
     flex-basis:0;
-
-
-
 }
 
 
 .panel2
 {
-  background-image:url("~../assets/pneumatic-panel.png");
+  background-image:url("~../assets/electronics-panel-v2.png");
   background-size: 100% 100%;
-  width: 50%;
-  height: 83%;
+  height: 80%;
   position: relative;
-  right: 10%;
+  /* right: 5%; */
   transform: scale(1.15);
   flex-grow:1;
   flex-basis:0;
@@ -206,13 +219,13 @@
 
 .panel3
 {
-  background-image:url("~../assets/hydraulics-panel.png");
+  background-image:url("~../assets/pneumatic-panel.png");
   background-size: 100% 100%;
-  width: 50%;
-  height: 83%;
+  width: 60%;
+  height: 60%;
   position: relative;
   transform: scale(1.15);
-  left: 10%;
+  left: 5%;
   flex-grow:1;
   flex-basis:0;
 
@@ -221,12 +234,12 @@
 
 .panel4
 {
-  background-image:url("~../assets/electronics-panel.png");
+  background-image:url("~../assets/hydraulics-panel.png");
   background-size: 100% 100%;
-  width: 50%;
-  height: 83%;
+  width: 60%;
+  height: 60%;
   position: relative;
-  right:10%;
+  right:5%;
   transform: scale(1.15);
   flex-grow:1;
   flex-basis:0;
@@ -295,8 +308,8 @@
     transition: 0.3s;
   }
 
-  .panel:hover{
-    box-shadow: -20px -20px 20px 0px rgba(0,0,0,0.2);
+  #panel:hover{
+    /* box-shadow: -20px -20px 20px 0px rgba(0,0,0,0.2); */
     transform: scale(1.17);
   }
 
