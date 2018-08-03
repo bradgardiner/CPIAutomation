@@ -12,11 +12,11 @@
         <router-link to="/" exact>
           <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" class="logo" alt="logo"></img>
         </router-link>
-        <router-link to="/upload">Request a Quote</router-link>
-        <a href="https://cpi-automation.myshopify.com/">Store</a>
-        <router-link to="/business">For Business</router-link>
-        <router-link to="/gallery">Gallery</router-link>
-        <router-link to="/contact">Contact Us</router-link>
+        <router-link to="/upload" id="tab">Request a Quote</router-link>
+        <a href="https://cpi-automation.myshopify.com/" id="tab">Store</a>
+        <router-link to="/business" id="tab">For Business</router-link>
+        <router-link to="/gallery" id="tab">Gallery</router-link>
+        <router-link to="/contact" id="tab">Contact Us</router-link>
         <!-- <router-link to="/engineering">Engineering</router-link>
         <router-link to="/capabilities">Capabilities</router-link>
         <router-link to="/services">Services</router-link>
@@ -27,6 +27,9 @@
     <transition name="fade" mode="out-in">
       <router-view class="view"></router-view>
     </transition>
+
+
+
 
 
   </div>
@@ -50,49 +53,43 @@ export default {
     background-color: #edeff0;
     margin: auto;
     color: #34495e;
-    /* overflow-y: visible; */
-
 
   }
+
+
+
   a{
     color: #34495e;
     text-decoration: none;
   }
 
-  #header-logo{
-    background-color: #1b1a1a;
-    z-index: 3;
-    height: 105px;
-    padding: 25px;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align:center;
-  }
-
   .header{
 
-    background-color: #2f2f2f;
+    background-color: transparent;
     z-index: 3;
-    top: 105px;
+    position: absolute;
     left: 0;
     right: 0;
     padding: 15px;
-    /* text-align:center; */
+    transition: 0.2s;
+    padding: 1%;
+    }
 
-    /* .inner{
-      max-width: 800px;
-      box-sizing: border-box;
-      margin: 0px auto;
-      padding: 15px 5px;
-    } */
-
+  .header:hover{
+    background-color: #2f2f2f;
+    transition: 0.2s;
   }
 
+  .inner{
+    box-sizing: border-box;
+  }
+  nav{
+    height: 100%;
+  }
 
   a{
+
     color: rgba(255, 255, 255, .8);
-    line-height: 24px;
     transition color: .15s ease;
     display: inline-block;
     vertical-align: middle;
@@ -100,8 +97,10 @@ export default {
     letter-spacing: .075em;
     margin-right: 1.8em;
 }
-    a:hover {
+    #tab:hover {
       color: #fff;
+      border-top: 5px solid #2886c7;
+      padding-bottom: 5px;
     }
 
     a:router-link-active
@@ -112,15 +111,9 @@ export default {
       margin-right: 0;
     }
 
-  .logo{
-    /* padding: 10px;
-    padding-left: 20px;
-    padding-bottom: 5px; */
-
-    /* width: 24px; */
-    margin-right: 10px;
-    display: inline-block;
-    /* vertical-align: middle; */
+  .logo:hover{
+    transition: 0.2s;
+    transform: scale(1.01);
   }
 
   .fade-enter-active, .fade-leave-active{

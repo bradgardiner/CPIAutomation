@@ -56,11 +56,11 @@
 
           <div class="col">
             <!-- <h1>Electrical</h1> -->
-            <img id="panel" src="~../assets/mech-panel-V2.png" style="width:60%; ">
+            <img id="panel" src="~../assets/electronics-panel-v2.png" style="width:60%; ">
 
           </div>
           <div class="col">
-            <img id="panel" src="~../assets/mech-panel-V2.png" style="width:60%; ">
+            <img id="panel" src="~../assets/pneumatic-panel-v2.png" style="width:60%; ">
           </div>
 
           <div  class="col">
@@ -96,12 +96,14 @@
     </div>
   </div>
   </div>
+  <footer-section></footer-section>
 </div>
 </template>
 
 <script>
   import slider from 'vue-concise-slider'
   export default{
+
 
     name: 'home',
     data(){
@@ -164,14 +166,7 @@
 
 <style>
 
-  /* h2{
-
-    width:auto;
-  }
-  p{
-    width:100%;
-  } */
-
+  body{}
   #our-mission{
     align-content:center;
     padding-top: 20%;

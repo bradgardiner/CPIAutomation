@@ -1,40 +1,35 @@
 <template>
-  <div id="gallery" style="padding:1% 2%;">
-    <div class="columns" style="padding:0% 0%;">
-      <div class="col">
-        <img src="~../assets/mech-panel.png" style="height: 200px;"/>
+  <div id="gallery" style="padding:0% 0%; background-color: white">
+    <div class="columns" style="padding:0% 0%; ">
+      <div id="title-left"class="col">
+        <h1>MECHANICAL</H1>
+        <!-- <img src="~../assets/mech-panel.png" style="height: 200px;"/> -->
       </div>
-      <div class="col">
+      <div id="desc" class="col">
         <p> Some blurb about how sweet 8020 extrusion is and all the junk it can doo blah blah blah blah</p>
       </div>
     </div>
-    <div class="columns">
-      <gallery :images="eightytwenty" :index="index" @close="index = null"></gallery>
-      <div
-        class="image"
-        v-for="(image, imageIndex) in eightytwenty"
-        :key="imageIndex"
-        @click="index = imageIndex"
-        :style="{ backgroundImage: 'url(' + image + ')', width: '400px', height: '200px' }"
-      ></div>
+    <div class="columns" >
+      <img id="gallery-images" v-img:eightyTwenty src="https://i.imgur.com/hZ7cH9w.jpg">
+      <img id="gallery-images" v-img:eightyTwenty src="https://i.imgur.com/LRfaPBd.jpg">
+      <img id="gallery-images" v-img:eightyTwenty src="https://i.imgur.com/hZ7cH9w.jpg">
+      <img id="gallery-images" v-img:eightyTwenty src="https://i.imgur.com/LRfaPBd.jpg">
+      <img id="gallery-images" v-img:eightyTwenty src="https://i.imgur.com/hZ7cH9w.jpg">
+      <img id="gallery-images" v-img:eightyTwenty src="https://i.imgur.com/LRfaPBd.jpg">
+
+
     </div>
     <div class="columns" style="padding:0% 0%;">
-      <div class="col">
+      <div id="desc" class="col">
         <p> Some blurb about how sweet electricity is and all the junk it can doo blah blah blah blah</p>
       </div>
-      <div class="col">
-        <img src="~../assets/electronics-panel.png" style="height: 200px; float: right;"/>
+      <div id="title-right"class="col">
+        <h1> PNEUMATICS </h1>
       </div>
     </div>
     <div class="columns">
-      <gallery :images="electrical" :index="index" @close="index = null"></gallery>
-      <div
-        class="image2"
-        v-for="(elecImage, elecIndex) in electrical"
-        :key="elecIndex"
-        @click="index = elecIndex"
-        :style="{ backgroundImage: 'url(' + elecImage + ')', width: '400px', height: '200px' }"
-      ></div>
+      <img id="gallery-images" v-img src="https://i.imgur.com/hZ7cH9w.jpg">
+
     </div>
     <div class="columns" style="padding:0% 0%;">
       <div class="col">
@@ -57,52 +52,73 @@
 </template>
 
 <script>
-  import VueGallery from 'vue-gallery';
 
   export default {
     data: function () {
       return {
-        eightytwenty: [
-          'https://i.imgur.com/hZ7cH9w.jpg',
-          'https://i.imgur.com/LRfaPBd.jpg',
-          'https://i.imgur.com/6th5rMd.jpg',
-        ],
-        electrical: [
-          'https://i.imgur.com/hZ7cH9w.jpg',
-          'https://i.imgur.com/LRfaPBd.jpg',
-          'https://i.imgur.com/6th5rMd.jpg',
-        ],
 
-
-        index: null
       };
     },
 
     components: {
-      'gallery': VueGallery
     },
   }
 </script>
 
 <style>
 
+  #title-left{
+    color: #2886C7;
+    padding: 0% 2%;
+    height: 200px;
+    position: relative;
+    background-color: #2f2f2f;
 
-
-.image {
-    float: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border: 1px solid #ebebeb;
-    margin: 5px;
   }
-  .image2 {
-      float: left;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border: 1px solid #ebebeb;
-      margin: 5px;
-    }
+
+  #title-left:before{
+    content: '';
+    position:absolute;
+
+    bottom:0;
+    right:0;
+    border-bottom:  200px solid #2886C7;
+    border-left: 500px solid transparent;
+
+  }
+
+  #title-right{
+    text-align: right;
+    color: #2886C7;
+    padding: 0% 2%;
+    height: 200px;
+    position: relative;
+    background-color: #2f2f2f;
+
+  }
+
+  #title-right:before{
+    content: '';
+    position:absolute;
+
+    top:0;
+    left:0;
+    border-top:  200px solid #2886C7;
+    border-right: 500px solid transparent;
+
+  }
+
+  #desc{
+    text-align: center;
+    position: relative;
+    height: 200px;
+    color: #2f2f2f;
+    background-color: #2886C7;
+  }
+
+#gallery-images{
+  width: 300px;
+  padding: .5% .3%;
+}
 
 </style>
