@@ -1,13 +1,13 @@
 <template>
   <div id="home">
-    <div id="main-banner" style="width:100%; height:800px;">
-      <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
-        <div slot="loading">loading...</div>
-       </slider>
-    </div>
-    <div class="" >
     <div class="wrap">
-    <div id="process" style="width:100%; height:500px; text-align:center;">
+      <div id="main-banner" style="width:100%; height:800px;">
+        <slider ref="slider" :pages="pages" :sliderinit="sliderinit" @slide='slide' @tap='onTap' @init='onInit'>
+          <div slot="loading">loading...</div>
+         </slider>
+      </div>
+
+    <div id="process" style="width:100%; height:100%; text-align:center;">
       <div class="columns" style="padding:2%; margin-left:5%; font-size:20px; color: #247ab5;">
         <div class="col">
           <h3> Upload</h3>
@@ -93,10 +93,9 @@
             <img src="~../assets/brandBelt.png" width="100%">
       </div>
 
+
     </div>
   </div>
-  </div>
-  <footer-section></footer-section>
 </div>
 </template>
 
@@ -174,6 +173,7 @@
     padding-right:5%;
     height: 100%;
     width: 30%;
+    color: white;
   }
 
 

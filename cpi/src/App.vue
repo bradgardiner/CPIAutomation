@@ -1,11 +1,6 @@
 <template>
   <div id="app">
-    <!-- <div id="header-logo">
-      <router-link to="/">
-        <img src="http://www.cpiautomation.com/sites/default/files/header-001.png" >
-      </router-link>
 
-    </div> -->
 
     <header class="header">
       <nav class="inner">
@@ -25,16 +20,34 @@
       </nav>
     </header>
     <transition name="fade" mode="out-in">
-      <router-view class="view"></router-view>
+      <router-view ></router-view>
     </transition>
+    <footer class="colomns">
+      <div class="column">
+        <ul style="list-style-type:none;">
+          <li><h4>What we sell</h4></li>
+          <li><a>Mechanical</a></li>
+          <li><a>Electrical</a></li>
+          <li><a>Pneumatics</a></li>
+          <li><a>Hydraulics</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul style="list-style-type:none;">
+          <li><h4>Contact us</h4></li>
+
+        </ul>
+
+      </div>
+      <div class="column">
+        <h4> &copy; Copyright 1991  CPI Automation </h4>
+      </div>
 
 
-
-
-
+    </footer>
   </div>
-
 </template>
+
 
 <script>
 export default {
@@ -44,7 +57,14 @@ export default {
 
 <style >
     #app {
-      overflow: visible;
+      overflow-y: hidden;
+      position: relative;
+      min-height: 100%;
+      height: 100%;
+      padding-bottom: 600px;
+
+
+
     }
 
   body{
@@ -53,7 +73,26 @@ export default {
     background-color: #edeff0;
     margin: auto;
     color: #34495e;
+    height: 100%;
+    min-height: 100%;
 
+    position: relative;\
+    overflow: visible;
+
+  }
+
+
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    font-size: 20px;
+    padding: 2% 15%;
+    background-color: #2f2f2f;
+    color: #247ab5;
   }
 
 
@@ -122,14 +161,11 @@ export default {
     opacity: 0
   }
 
-  footer{
-    background-color: #2f2f2f;
-    text-align: center;
-  }
+
 
   .column {
     float: left;
-    width: 33.33%;
+    width: 25%;
     padding: 15px;
   }
 
